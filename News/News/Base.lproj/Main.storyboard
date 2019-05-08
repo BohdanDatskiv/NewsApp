@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -137,10 +136,17 @@
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="cellModel" destination="lV3-dS-qNc" id="2Ex-WI-vRu"/>
                         <outlet property="searchArticle" destination="Xvi-q6-C2K" id="hPf-4j-9uJ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kxy-0c-F4d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="eEG-TM-KW9" customClass="NetworkManager" customModule="News" customModuleProvider="target"/>
+                <customObject id="lV3-dS-qNc" customClass="CellModel" customModule="News" customModuleProvider="target">
+                    <connections>
+                        <outlet property="networkManager" destination="eEG-TM-KW9" id="Uu4-h9-bXd"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="152.17391304347828" y="-8.7053571428571423"/>
         </scene>

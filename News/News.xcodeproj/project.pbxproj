@@ -14,6 +14,8 @@
 		C0937B32227F64AD006336A4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0937B31227F64AD006336A4 /* TableViewController.swift */; };
 		C0937B34227F75FF006336A4 /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0937B33227F75FF006336A4 /* Articles.swift */; };
 		C0937B3622805EF2006336A4 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0937B3522805EF2006336A4 /* TableViewCell.swift */; };
+		C0EF803722834A62009BEE4A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EF803622834A62009BEE4A /* NetworkManager.swift */; };
+		C0EF803922835854009BEE4A /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EF803822835854009BEE4A /* CellModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		C0937B31227F64AD006336A4 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		C0937B33227F75FF006336A4 /* Articles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
 		C0937B3522805EF2006336A4 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		C0EF803622834A62009BEE4A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C0EF803822835854009BEE4A /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +65,9 @@
 				C0937B1F227F5B39006336A4 /* AppDelegate.swift */,
 				C0937B31227F64AD006336A4 /* TableViewController.swift */,
 				C0937B3522805EF2006336A4 /* TableViewCell.swift */,
+				C0EF803822835854009BEE4A /* CellModel.swift */,
 				C0937B33227F75FF006336A4 /* Articles.swift */,
+				C0EF803622834A62009BEE4A /* NetworkManager.swift */,
 				C0937B23227F5B39006336A4 /* Main.storyboard */,
 				C0937B26227F5B3B006336A4 /* Assets.xcassets */,
 				C0937B28227F5B3B006336A4 /* LaunchScreen.storyboard */,
@@ -143,7 +149,9 @@
 			files = (
 				C0937B34227F75FF006336A4 /* Articles.swift in Sources */,
 				C0937B3622805EF2006336A4 /* TableViewCell.swift in Sources */,
+				C0EF803722834A62009BEE4A /* NetworkManager.swift in Sources */,
 				C0937B20227F5B39006336A4 /* AppDelegate.swift in Sources */,
+				C0EF803922835854009BEE4A /* CellModel.swift in Sources */,
 				C0937B32227F64AD006336A4 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
