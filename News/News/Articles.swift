@@ -30,7 +30,15 @@ struct Article {
                 self.image = UIImage(data: data)
             }
         }
-        self.publishedAt = dictionary["publishedAt"] as? String ?? ""
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "uk")
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
+        if let date = dateFormatter.date(from: dictionary["publishedAt"]  as! String) {
+            dateFormatter.dateFormat = "HH:mm"
+            self.publishedAt = dateFormatter.string(from: date)
+        } else {
+            self.publishedAt = ""
+        }
         self.url = dictionary["url"] as? String ?? ""
         self.isSeen = false
     }

@@ -32,9 +32,6 @@ class CellModel: NSObject {
     
     func configure(cell: TableViewCell, for indexPath: IndexPath, isSearching: Bool) -> TableViewCell {
         cell.isSeenButton.layer.cornerRadius = 10
-        let dateFormatter = DateFormatter()
-        dateFormatter.locale = Locale(identifier: "uk")
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
         if isSearching {
             cell.articleTitleLabel.text = searchedArticles[indexPath.row].title
             cell.articleSourceLabel.text = searchedArticles[indexPath.row].sourceName
@@ -51,10 +48,7 @@ class CellModel: NSObject {
                 cell.imageHeight.constant = 0
                 cell.imageTopConstraint.constant = 0
             }
-            if let date = dateFormatter.date(from: searchedArticles[indexPath.row].publishedAt) {
-                dateFormatter.dateFormat = "HH:mm"
-                cell.publishedDateLabel.text = dateFormatter.string(from: date)
-            }
+            cell.publishedDateLabel.text = searchedArticles[indexPath.row].publishedAt
             if searchedArticles[indexPath.row].isSeen {
                 cell.isSeenButton.isHidden = true
             } else {
@@ -76,10 +70,7 @@ class CellModel: NSObject {
                 cell.imageHeight.constant = 0
                 cell.imageTopConstraint.constant = 0
             }
-            if let date = dateFormatter.date(from: articles[indexPath.row].publishedAt) {
-                dateFormatter.dateFormat = "HH:mm"
-                cell.publishedDateLabel.text = dateFormatter.string(from: date)
-            }
+            cell.publishedDateLabel.text = articles[indexPath.row].publishedAt
             if articles[indexPath.row].isSeen {
                 cell.isSeenButton.isHidden = true
             } else {
